@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="Code" pattern="file[vulnerable-web-application]:*.php" />
+</component>
