@@ -4,6 +4,9 @@
  * EVER USE THIS FOR ANYTHING! PLEASE!
  */
 
-$db = new mysqli('localhost', 'root', 'asdfasdf');
-$db->select_db('vuln');
-$db->set_charset('utf8');
+ini_set('display_errors', 1);
+
+session_start();
+list($path, ) = explode('?', $_SERVER['REQUEST_URI'], 2);
+
+require_once(__DIR__ . '/db.php');

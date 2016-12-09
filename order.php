@@ -4,6 +4,10 @@
  * EVER USE THIS FOR ANYTHING! PLEASE!
  */
 
-$db = new mysqli('localhost', 'root', 'asdfasdf');
-$db->select_db('vuln');
-$db->set_charset('utf8');
+require(__DIR__ . '/includes/loggedin-header.php');
+?>
+<h2 class="text-muted">Order</h2>
+
+<?php
+require(__DIR__ . '/includes/loggedin-footer.php');
+?>

@@ -14,6 +14,7 @@ htdocs/Gruntfile.js
 htdocs/node_modules
 htdocs/modules
 htdocs/.sass-cache
+.idea/dataSources
 
 # Created by .ignore support plugin (hsz.mobi)
 ### OSX template

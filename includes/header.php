@@ -4,6 +4,7 @@
  * EVER USE THIS FOR ANYTHING! PLEASE!
  */
 
+require_once(__DIR__ . '/../lib/libs.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -23,6 +24,10 @@
 			href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
 			integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
 			crossorigin="anonymous" />
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            rel="stylesheet"
+            integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+            crossorigin="anonymous" />
 
 		<!--[if lt IE 9]>
 			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -30,4 +35,3 @@
 		<![endif]-->
 	</head>
 	<body>
-		<div class="container">

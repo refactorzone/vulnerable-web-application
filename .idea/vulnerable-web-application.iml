@@ -14,5 +14,9 @@
         </SOURCES>
       </library>
     </orderEntry>
+    <orderEntry type="library" name="jquery-2.2.4" level="application" />
+    <orderEntry type="library" name="bootstrap" level="application" />
+    <orderEntry type="library" name="html5shiv" level="application" />
+    <orderEntry type="library" name="respond" level="application" />
   </component>
 </module>
