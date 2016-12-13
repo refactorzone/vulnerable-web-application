@@ -15,7 +15,7 @@ $sql = '
 $db->query($sql);
 
 $_SESSION['user_id'] = $db->insert_id;
-$_SESSION['user']  = $username;
+$_SESSION['username']  = $username;
 $_SESSION['admin'] = false;
 
 header('Location: /dashboard.php');

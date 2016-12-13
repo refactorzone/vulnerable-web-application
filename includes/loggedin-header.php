@@ -6,7 +6,7 @@
 
 require(__DIR__ . '/header.php');
 
-if (!$_SESSION['user']) {
+if (!$_SESSION['username']) {
     header('Location: /');
 }
 

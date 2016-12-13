@@ -17,7 +17,7 @@ $sql = '
     INNER JOIN users ON users.id=domains.user_id
 ';
 if (!$_SESSION['admin']) {
-    $sql .= ' WHERE users.username="' . $_SESSION['user'] . '"';
+    $sql .= ' WHERE users.username="' . $_SESSION['username'] . '"';
 }
 $domainResult = $db->query($sql);
 $domains = [];
@@ -26,7 +26,7 @@ while ($row = $domainResult->fetch_assoc()) {
 }
 
 ?>
-<h2 class="text-muted">Hello, <?=$_SESSION['user']?></h2>
+<h2 class="text-muted">Hello, <?=$_SESSION['username']?></h2>
 <table class="table table-striped">
     <thead>
         <tr>
@@ -60,7 +60,7 @@ while ($row = $domainResult->fetch_assoc()) {
     </tbody>
     <tfoot>
         <tr>
-           <td colspan="3" class="text-right">
+           <td colspan="<?=($_SESSION['admin']?4:3)?>" class="text-right">
                <a href="adddomain.php" class="btn btn-success"><i class="fa fa-plus"></i> Add domain</a>
            </td>
         </tr>
