@@ -13,11 +13,11 @@ require(__DIR__ . '/includes/header.php');
                 <h1>Please log in:</h1>
                 <div class="form-group">
                     <label for="username">Username</label>
-                    <input type="text" class="form-control" id="username" placeholder="Username" autofocus="autofocus" />
+                    <input type="text" class="form-control" name="username" id="username" placeholder="Username" autofocus="autofocus" />
                 </div>
                 <div class="form-group">
                     <label for="password">Password</label>
-                    <input type="password" class="form-control" id="password" placeholder="Password" />
+                    <input type="password" class="form-control" name="password" id="password" placeholder="Password" />
                 </div>
                 <button type="submit" class="btn btn-default">Submit</button>
             </form>

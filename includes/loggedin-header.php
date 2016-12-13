@@ -26,7 +26,7 @@ if (!$_SESSION['user']) {
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li<?php if ($path == '/dashboard.php') : ?> class="active"<?php endif; ?>><a href="/dashboard.php">Dashboard</a></li>
-                <li<?php if ($path == '/order.php') : ?> class="active"<?php endif; ?>><a href="/order.php">Order</a></li>
+                <li<?php if ($path == '/adddomain.php') : ?> class="active"<?php endif; ?>><a href="/adddomain.php">Order</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Downloads</a></li>
                 <li><a href="#">About</a></li>

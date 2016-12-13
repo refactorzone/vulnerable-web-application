@@ -6,8 +6,9 @@
 
 require_once(__DIR__ . '/lib/libs.php');
 
-$result = $db->query('
+$sql = '
   SELECT
+    id,
     username,
     admin
   FROM
@@ -16,11 +17,14 @@ $result = $db->query('
     username="' . $_POST['username'] . '"
     AND
     password="' . $_POST['password'] . '"
-');
+';
+
+$result = $db->query($sql);
 
 $results = $result->fetch_assoc();
 
 if ($results['username']) {
+	$_SESSION['user_id'] = $results['id'];
     $_SESSION['username'] = $results['username'];
     $_SESSION['admin'] = (bool)$results['admin'];
     header('Location: /dashboard.php');

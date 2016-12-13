@@ -26,7 +26,7 @@ while ($row = $domainResult->fetch_assoc()) {
 }
 
 ?>
-<h2 class="text-muted">My domains</h2>
+<h2 class="text-muted">Hello, <?=$_SESSION['user']?></h2>
 <table class="table table-striped">
     <thead>
         <tr>
@@ -45,11 +45,11 @@ while ($row = $domainResult->fetch_assoc()) {
         <?php foreach($domains as $domain) :?>
             <tr>
                 <td>
-                    <?=$domain['name']?>
+                    <?=$domain['domain_name']?>
                 </td>
                 <?php if ($_SESSION['admin']) : ?><td><?=$domain['username']?></td><?php endif; ?>
                 <td>
-                    <?=$domain['expires']?>
+                    <?=$domain['domain_expires']?>
                 </td>
                 <td>
                     $ 12.99
@@ -61,7 +61,7 @@ while ($row = $domainResult->fetch_assoc()) {
     <tfoot>
         <tr>
            <td colspan="3" class="text-right">
-               <a href="order.php" class="btn btn-success"><i class="fa fa-plus"></i> Add domain</a>
+               <a href="adddomain.php" class="btn btn-success"><i class="fa fa-plus"></i> Add domain</a>
            </td>
         </tr>
     </tfoot>

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../sessioncapture/.idea/sessioncapture.iml" filepath="$PROJECT_DIR$/../sessioncapture/.idea/sessioncapture.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/vulnerable-web-application.iml" filepath="$PROJECT_DIR$/.idea/vulnerable-web-application.iml" />
     </modules>
   </component>
